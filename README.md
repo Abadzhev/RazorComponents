@@ -55,27 +55,34 @@ Follow the steps below to try our Razor Components in your own application.
 1. Create a new solution using the "Razor Components" or "Blazor" template in Visual Studio 2019.
 
 In the "Create a new project" dialog, select "ASP.NET Core Web Application" (C# language).
+
 ![Create New ASP.NET Core Web Application Project"](https://raw.githubusercontent.com/DevExpress/RazorComponents/master/media/VisualStudio2019CreateNewProject_AspNetCoreWebApp.png)
 
 In the next step select "ASP.NET Core 3.\*" framework and "Razor Components" project template.
+
 ![Create New ASP.NET Core Web Application Project"](https://raw.githubusercontent.com/DevExpress/RazorComponents/master/media/VisualStudio2019CreateNewProject_RazorComponents.png)
 
 2. Register the *DevExpress Early Access* feed in Visual Studio's NuGet Package Manager.
 
 Select "Package Manager Settings" in the Visual Studio menu.
+
 ![Open the "Package Manager Settings"](https://raw.githubusercontent.com/DevExpress/RazorComponents/master/media/NuGetPackageManagerSettings.png)
 
 Add a new NuGet source:
+
 ```https://nuget.devexpress.com/early-access/api```
+
 ![Add new NuGet source](https://raw.githubusercontent.com/DevExpress/RazorComponents/master/media/DevExpressEarlyAccessNuGetSource.png)
 
 3. Install the "DevExpress.RazorComponents" NuGet package.
 4. Download all files from the *client-runtime* directory in this  GitHub repository. Move the downloaded files into the "wwwroot" directory of your project. Include the files into your start page.
 5. Register our tag namespace and helper in /Components/\_ViewImports.cshtml: 
+
 ```
 @using DevExpress.RazorComponents
 @addTagHelper *, DevExpress.RazorComponents
 ```
+
 6. Your application is ready to use DevExpress Razor Components.
 
 # Troubleshooting
